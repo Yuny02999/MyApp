@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFE0"
+    android:orientation="vertical"
+    tools:context=".ZuoYe.ZuoYe_6_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_test1"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_test2"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/text_test1"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="音乐播放器"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:id="@+id/rtl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启服务"
+        android:layout_below="@+id/btn2"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭服务" />
+
+    ></RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Llt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/rtl1"
+        android:layout_marginBottom="40dp">
+
+
+        <ImageButton
+            android:id="@+id/img_up"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/img_play_stop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="@drawable/buttonstyle"
+            android:src="@drawable/play"/>
+
+        <ImageButton
+            android:id="@+id/img_down"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Llt2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/Llt1"
+        android:layout_marginBottom="10dp"
+        android:background="#838B83"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/playSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:outlineSpotShadowColor="@color/black"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/music2" />
+
+</RelativeLayout>

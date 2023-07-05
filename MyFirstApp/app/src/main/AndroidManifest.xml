@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--读写内存块权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--调用相机权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/apppc"
+        android:label="yyy"
+        android:networkSecurityConfig="@xml/network"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:largeHeap="true"
+        tools:targetApi="n">
+        <activity
+            android:name=".Spinner_Test"
+            android:exported="false" />
+        <activity
+            android:name=".TaoBao.Seek_status_bar.Seek_My"
+            android:exported="true" />
+        <activity
+            android:name=".TaoBao.Seek_status_bar.Seek_ShoppingCart"
+            android:exported="true" />
+        <activity
+            android:name=".TaoBao.Seek_status_bar.Seek_Message"
+            android:exported="true" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name=".OpenStar_cartoon"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TaoBao.TaoBao_MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Call_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Data_BigUp_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".SQLite_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ZuoYe.ZuoYe_7_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ZuoYe.ZuoYe_6_Activity"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".secondActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ZuoYe.ZuoYe_5_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ZuoYe.ZuoYe_4_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ZuoYe.ZuoYe_3_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ZuoYe.ZuoYe_2_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ZhuJieMianMain"
+            android:exported="true" />
+        <activity
+            android:name=".dengluMain"
+            android:exported="true" />
+        <activity
+            android:name=".ZuoYe.ZuoYe_1_Activicty"
+            android:exported="true" />
+        <activity
+            android:name=".ZhuCeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service android:name=".AllService.MyService" />
+    </application>
+
+</manifest>

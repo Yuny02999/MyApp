@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    tools:context=".TaoBao.TaoBao_MainActivity"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:background="#CAE1FF">
+
+                <LinearLayout
+                    android:id="@+id/Rel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/qiandao"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/qiandao2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/seek_edittext">
+
+                            <ImageView
+                                android:id="@+id/SignIn"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/signin"
+                                android:layout_centerVertical="true"/>
+                            <TextView
+                                android:id="@+id/signIn_Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/SignIn"
+                                android:text="签到"
+                                android:textColor="#CCCCCC"
+                                android:textSize="13dp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/recommended"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="推荐"
+                        android:textSize="20dp"
+                        android:gravity="center"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/subscription"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="订阅"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/VIP_id"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="50dp"
+                        android:layout_gravity="center_vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/V2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/seek_edittext">
+
+                            <ImageView
+                                android:id="@+id/VIP_Picture"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/vip" />
+
+                            <TextView
+                                android:id="@+id/VIP_Text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/VIP_Picture"
+                                android:text="会员码"
+                                android:textColor="#CCCCCC"
+                                android:textSize="13dp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Seek_lin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/Rel2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/seek_edittext"
+                        android:layout_marginStart="15dp">
+
+                        <ImageView
+                            android:id="@+id/seek_scan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/scan" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="25dp"
+                            android:background="#DEDEDE"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/seek_scan"/>
+
+                        <EditText
+                            android:id="@+id/seek_edt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="100dp"
+                            android:layout_toEndOf="@+id/seek_scan"
+                            android:hint="hint"
+                            android:padding="4dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textColorHint="#616161"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <ImageView
+                            android:id="@+id/seek_img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@id/find"
+                            android:src="@drawable/photograph" />
+
+                        <Button
+                            android:id="@+id/find"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="3dp"
+                            android:background="@drawable/seek_find_style"
+                            android:minWidth="60dp"
+                            android:minHeight="30dp"
+                            android:text="搜索"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Rec2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#66000000" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/MyRecommended"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/NavigationBar"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#6495ED"
+                >
+
+            <TextView
+                android:id="@+id/Homepage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="首页"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="消息"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/shoppingCart"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="购物车"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/my"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

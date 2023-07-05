@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dengluMain">
+
+    <RelativeLayout
+        android:id="@+id/Rel1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgk"
+        >
+
+        <!-- //标题// -->
+        <TextView
+            android:id="@+id/textViewDL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:text="登录页面"
+            android:textColor="#FFFFFF"
+            android:textSize="15pt" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lrl1"
+            android:layout_centerHorizontal="true"
+            android:text="忘记密码？"
+            android:textColor="#FFFFFF"
+            android:textSize="5pt"
+            tools:ignore="TextSizeCheck" />
+
+        <!-- //账号// -->
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDL"
+            android:layout_alignParentStart="true"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:text="账号:"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/zh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="10pt"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <!-- //密码// -->
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_alignParentStart="true"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/mm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="10pt"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+    <!-- //CheckBox// -->
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear2"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkbox1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="显示密码"-->
+<!--                />-->
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="开启历史"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <!-- //按钮// -->
+        <LinearLayout
+            android:id="@+id/lrl1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/linear2"
+            >
+
+        <Button
+            android:id="@+id/DLqueding"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="确定"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="删除"
+            android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/DLyanzheng"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle"
+                android:text="历史"
+                android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/DLzhuce"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="注册"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+        <!--左上角返回-->
+        <ImageButton
+            android:id="@+id/iB1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!--隐藏密码-->
+        <ToggleButton
+            android:id="@+id/eyes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/linear1"
+            android:layout_alignEnd="@+id/linear1"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/open_eyes"
+            android:textSize="0sp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

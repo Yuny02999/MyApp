@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/bargain_style.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/buttonstyle.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/buttonstyle2.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/call_red.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/call_stop.xml" value="0.2" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/call_style.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/classification.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/curriculum_style.xml" value="0.1815" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/curriculum_style2.xml" value="0.1815" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/curriculum_style3.xml" value="0.1815" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/head_photo_style.xml" value="1.3928571428571428" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/image_image_press.xml" value="1.21875" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/imageview_style.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/seek_edittext.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/seek_find.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/drawable/seek_find_style.xml" value="0.26979166666666665" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_call.xml" value="0.527047913446677" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_data_big_up.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_denglu_main.xml" value="0.264" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_edit_text.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_lmh_test.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_notepad.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_open_star_cartoon.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_save_qqactivity.xml" value="0.14270833333333333" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_second.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_seek.xml" value="0.176" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_seek_home_page.xml" value="0.20833333333333334" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_seek_my.xml" value="0.20833333333333334" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_seek_shopping_cart.xml" value="0.20833333333333334" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_spinner_test.xml" value="0.264" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_sqlite.xml" value="0.4" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_test.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_zhu_jie_mian_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_zuo_ye2.xml" value="0.13645833333333332" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_zuo_ye3.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_zuo_ye4.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_zuo_ye5.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_zuo_ye6.xml" value="0.264" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_zuo_ye7.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/activity_zuo_ye7_activicty.xml" value="0.264" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/addressbook.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/but1test.xml" value="0.30988593155893535" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/five_curriculum.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/four_curriculum2.xml" value="0.2390625" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/fragment__recommend.xml" value="0.264" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/fragment_recommended.xml" value="0.213768115942029" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/fragment_subscription.xml" value="0.15353260869565216" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/item_list.xml" value="0.264" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/layout_one.xml" value="0.22327898550724637" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/layout_one2.xml" value="0.22327898550724637" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/layout_one3.xml" value="0.22327898550724637" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/layout_recommended.xml" value="0.21693840579710144" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/left_in.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/list_item1.xml" value="0.20108695652173914" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/one_curriculum.xml" value="0.264" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/one_curriculum2.xml" value="0.2390625" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/rotaterepeat.xml" value="0.16666666666666666" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/test.xml" value="0.4" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/three_curriculum.xml" value="0.2390625" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/layout/two_curriculum.xml" value="0.25364583333333335" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/xml/network.xml" value="0.13645833333333332" />
+        <entry key="..\:/AllApp/MyFirstApp/app/src/main/res/xml/xx1.xml" value="0.13645833333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.25364583333333335" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZuoYe.ZuoYe_2_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择:"
+            android:textColor="#C6089297"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/TextView3">
+
+            <CheckBox
+                android:id="@+id/RadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="篮球"
+                android:textSize="30dp"
+                android:textColor="#C6089297"/>
+
+            <CheckBox
+                android:id="@+id/RadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="乒乓球"
+                android:textSize="30dp"
+                android:textColor="#C6089297"/>
+
+            <CheckBox
+                android:id="@+id/RadioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="羽毛球"
+                android:textSize="30dp"
+                android:textColor="#C6089297"/>
+
+            <CheckBox
+                android:id="@+id/RadioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排球"
+                android:textSize="30dp"
+                android:textColor="#C6089297"/>
+
+            <TextView
+                android:id="@+id/TextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您选择的是："
+                android:textColor="#C619D8DF"
+                android:textSize="25dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/TextView2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="30dp"
+                android:layout_toRightOf="@+id/TextView4"
+                android:textStyle="italic"
+                android:textColor="#C6089297"/>
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

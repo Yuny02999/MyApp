@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">This is FirstTest</string>
+    <string name="button">普通对话框</string>
+    <string name="ok">确定</string>
+    <string name="massage">这是普通对话框</string>
+    <string name="_1">作业1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">注册</string>
+    <string name="userName">用户名</string>
+    <string name="password">密码</string>
+    <string name="password_">确认密码</string>
+    <string name="sqlite">SQLite数据库</string>
+    <string name="GoodEeg">好蛋</string>
+</resources>

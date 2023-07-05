@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Data_BigUp_Activity"
+    android:background="@drawable/black">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:hint="未输入"
+        android:text=""
+        android:textSize="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        >
+
+        <Button
+            android:id="@+id/bigUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt1"
+            android:layout_marginLeft="60dp"
+            android:text="放大" />
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入任意字符"/>
+        <Button
+            android:id="@+id/smallData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn1"
+            android:layout_below="@+id/edt1"
+            android:text="缩小"
+            />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新"
+            android:layout_below="@+id/edt1"
+            android:layout_toRightOf="@+id/bigUp"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>
