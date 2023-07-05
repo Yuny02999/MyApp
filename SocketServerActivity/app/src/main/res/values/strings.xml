@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SocketServerActivity</string>
+    <string name="connected">connected</string>
+</resources>
