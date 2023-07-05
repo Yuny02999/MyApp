@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Counter</string>
+    <string name="clean">清除</string>
+    <string name="record">记录</string>
+    <string name="历史">历史</string>
+    <string name="减1">减1</string>
+    <string name="自动记录">自动记录</string>
+    <string name="计数器">计数器</string>
+    <string name="记事本">记事本</string>
+    <string name="确定">确定</string>
+    <string name="获取当前时间">获取当前时间</string>
+    <string name="单位毫秒">单位毫秒:</string>
+    <string name="停止时间">停止时间</string>
+</resources>
