@@ -69,9 +69,7 @@ public class BooksActivity extends AppCompatActivity implements View.OnClickList
         final TextView change = view.findViewById(R.id.change);
         final TextView delete = view.findViewById(R.id.delete);
 
-        change.setOnClickListener(view1 -> {
-            upData(i);
-        });
+        change.setOnClickListener(view1 -> upData(i));
 
         delete.setOnClickListener(view1 -> {
             AlertDialog dialog1;
@@ -165,8 +163,6 @@ public class BooksActivity extends AppCompatActivity implements View.OnClickList
 
     private void deleteData(int i) {
         String title = String.valueOf(List.get(i).get("title"));
-        String sum = String.valueOf(List.get(i).get("sum"));
-        String time = String.valueOf(List.get(i).get("time"));
         MySQLHelper mySQLHelper = new MySQLHelper(getApplicationContext());
         SQLiteDatabase db = mySQLHelper.getWritableDatabase();
         long dl_title = db.delete("books", "title=?", new String[]{title});

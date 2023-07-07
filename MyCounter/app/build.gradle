@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.example.mycounter'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.mycounter"
         minSdk 20
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.2"
 
@@ -29,6 +29,11 @@ android {
 }
 
 dependencies {
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'//swipeLayout
+    implementation 'com.android.support:support-v4:20.+'
+    implementation 'com.android.support:recyclerview-v7:21.0.0'
+
+
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
