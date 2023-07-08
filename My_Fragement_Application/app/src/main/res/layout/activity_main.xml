@@ -15,10 +15,11 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="微信"
             android:layout_centerInParent="true"
+            android:text="微信"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
     </RelativeLayout>
 
     <View
@@ -33,7 +34,8 @@
         android:id="@+id/mainVP"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        tools:ignore="SpeakableTextPresentCheck">
 
     </androidx.viewpager.widget.ViewPager>
 
@@ -65,8 +67,9 @@
             android:gravity="center_horizontal"
             android:text="微信"
             android:textColor="@color/black"
-            android:textSize="15dp"
-            />
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
         <TextView
             android:id="@+id/tongxunlu"
             android:layout_width="0dp"
@@ -75,7 +78,9 @@
             android:gravity="center_horizontal"
             android:text="通讯录"
             android:textColor="@color/black"
-            android:textSize="15dp"/>
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
         <TextView
             android:id="@+id/faxian"
             android:layout_width="0dp"
@@ -84,7 +89,9 @@
             android:gravity="center_horizontal"
             android:text="发现"
             android:textColor="@color/black"
-            android:textSize="15dp"/>
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,SpUsage" />
+
         <TextView
             android:id="@+id/me"
             android:layout_width="0dp"
@@ -93,7 +100,8 @@
             android:gravity="center_horizontal"
             android:text="我"
             android:textColor="@color/black"
-            android:textSize="15dp"/>
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
     </LinearLayout>
 
 

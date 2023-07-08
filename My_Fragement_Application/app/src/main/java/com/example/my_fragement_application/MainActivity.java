@@ -1,6 +1,7 @@
 package com.example.my_fragement_application;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -90,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         faxian = findViewById(R.id.faxian);
         me = findViewById(R.id.me);
 
+        title.setOnClickListener(this);
         weixin.setOnClickListener(this);
         tongxunlu.setOnClickListener(this);
         faxian.setOnClickListener(this);
@@ -112,6 +114,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
+            case R.id.title:
+                Intent intent = new Intent(this, textActivity.class);
+                startActivity(intent);
+                break;
             case R.id.weixin:
                 vp.setCurrentItem(0, true);
                 break;
