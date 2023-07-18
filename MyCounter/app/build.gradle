@@ -29,10 +29,10 @@ android {
 }
 
 dependencies {
-    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'//swipeLayout
-    implementation 'com.android.support:support-v4:20.+'
-    implementation 'com.android.support:recyclerview-v7:21.0.0'
-
+    implementation 'com.baoyz.swipemenulistview:library:1.3.0'
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar' //swipeLayout
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'

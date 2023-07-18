@@ -1,6 +1,7 @@
 package com.example.mycounter;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -9,6 +10,10 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.text.Layout;
+import android.util.Log;
+import android.view.DragEvent;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -16,6 +21,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -23,6 +29,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daimajia.swipe.SwipeLayout;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
@@ -39,7 +46,12 @@ public class BooksActivity extends AppCompatActivity implements View.OnClickList
     Dialog dialog;
     Dialog dialog_first;
     SimpleAdapter sp;
+    Toast toast;
+    SwipeLayoutAdapter swipeLayoutAdapter;
+    RecyclerView recyclerView;
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +63,19 @@ public class BooksActivity extends AppCompatActivity implements View.OnClickList
                 new int[]{R.id.title, R.id.sum, R.id.time_text});
         listView.setAdapter(sp);
 
-        listView.setOnItemClickListener((adapterView, view, i, l) -> promptShow(i));
+//        listView.setOnItemClickListener((adapterView, view, i, l) -> promptShow(i));
+    }
+
+    private void mToast(String msg) {
+        if (toast != null) {
+            toast.cancel();
+            toast = null;
+        } else {
+            toast = Toast.makeText(this, msg, Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.setText(msg);
+            toast.show();
+        }
     }
 
     private void promptShow(int i) {
@@ -132,7 +156,7 @@ public class BooksActivity extends AppCompatActivity implements View.OnClickList
             SQLiteDatabase db = MySQLHelper.getWritableDatabase();
             String sum_add = sum_edit.getText().toString();
             String time_add = time_edit.getText().toString();
-            if ( sum_add.isEmpty() | time_add.isEmpty()) {
+            if (sum_add.isEmpty() | time_add.isEmpty()) {
                 Toast.makeText(this, "不能为空", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -141,7 +165,7 @@ public class BooksActivity extends AppCompatActivity implements View.OnClickList
             cv.put("sum", sum_add);
             cv.put("time", time_add);
             long a = db.update("books", cv, "title=?", new String[]{title});
-            if (a > 0){
+            if (a > 0) {
                 Toast.makeText(this, "修改成功", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
                 List.clear();
@@ -151,7 +175,7 @@ public class BooksActivity extends AppCompatActivity implements View.OnClickList
                         new int[]{R.id.title, R.id.sum, R.id.time_text});
                 listView.setAdapter(sp);
                 sp.notifyDataSetChanged();
-            }else {
+            } else {
                 Toast.makeText(this, "修改失败", Toast.LENGTH_SHORT).show();
             }
         });
@@ -166,7 +190,7 @@ public class BooksActivity extends AppCompatActivity implements View.OnClickList
         MySQLHelper mySQLHelper = new MySQLHelper(getApplicationContext());
         SQLiteDatabase db = mySQLHelper.getWritableDatabase();
         long dl_title = db.delete("books", "title=?", new String[]{title});
-        if (dl_title > 0 ) {
+        if (dl_title > 0) {
             Toast.makeText(this, "删除成功", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "删除失败", Toast.LENGTH_SHORT).show();
